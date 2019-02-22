@@ -1,13 +1,13 @@
 # Python For Bioinformatics
 
-Introduction to Python for Bioinformatics - available at https://github.com/kipkurui/Python4Bioinformatics.
+Introduction to Python for Bioinformatics - available at https://github.com/kipkurui/Python4Bioinformatics2019.
 
 <small><small><i>
 
 ## Attribution
 These tutorials are an adaptation of the Introduction to Python for Maths by [Andreas Ernst](http://users.monash.edu.au/~andreas), available from https://gitlab.erc.monash.edu.au/andrease/Python4Maths.git. The original version was written by Rajath Kumar and is available at https://github.com/rajathkumarmp/Python-Lectures.
 
-These notes have been greatly amended and updated for the EANBiT Introduction to Python for Bioinformatics course facilitated [Caleb Kibet](https://twitter.com/calkibet), Audrey Mbogho and Anthony Etuk. 
+hese notes have been greatly amended and updated for the MSC Bioinformatics and Molecular Biology at Pwani university, sponsored by EANBiT by Caleb Kibet[Caleb Kibet](https://twitter.com/calkibet)
 </small></small></i>
 
 # Quick Introduction to Jupyter Notebooks
@@ -62,13 +62,13 @@ or by using pip
 
 ## How to learn from this resource?
 
-Download all the notebooks from [Python4Bioinformatics(https://github.com/kipkurui/Python4Bioinformatics). The easiest way to do that is to clone the GitHub repository to your working directory using any of the following commands:
+Download all the notebooks from [Python4Bioinformatics(https://github.com/kipkurui/Python4Bioinformatics2019). The easiest way to do that is to clone the GitHub repository to your working directory using any of the following commands:
 
-    git clone https://github.com/kipkurui/Python4Bioinformatics.git
+    git clone https://github.com/kipkurui/Python4Bioinformatics2019.git
 
 or
 
-    wget https://github.com/kipkurui/Python4Bioinformatics/archive/master.zip
+    wget https://github.com/kipkurui/Python4Bioinformatics2019/archive/master.zip
     
     unzip master.zip
     
@@ -83,12 +83,6 @@ Then you can quickly launch jupyter lab using:
 NB: We will use a jupyter lab for training. 
 A Jupyter notebook is made up of many cells. Each cell can contain Python code. You can execute a cell by clicking on it and pressing `Shift-Enter` or `Ctrl-Enter` (run without moving to the next line). 
 
-### Login into the web server
-
-The easiest way to run this and other notebooks for the EANBiT course participants is to log into the Jupyter server (Unfortunately, this is not currently working). The steps for running notebooks are:
-* Log in using the username and password assigned to you. The first time you log in an empty account will automatically be set up for you.
-* Press the start button (if prompted by the system)
-* Use the menu of the jupyter system to upload a .ipynb python notebook file or to start a new notebook.
 
 ### Further help
 
