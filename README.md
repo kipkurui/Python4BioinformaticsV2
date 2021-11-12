@@ -7,7 +7,7 @@ Introduction to Python for Bioinformatics - available at https://github.com/kipk
 ## Attribution
 These tutorials are an adaptation of the Introduction to Python for Maths by [Andreas Ernst](http://users.monash.edu.au/~andreas), available from https://gitlab.erc.monash.edu.au/andrease/Python4Maths.git. The original version was written by Rajath Kumar and is available at https://github.com/rajathkumarmp/Python-Lectures.
 
-hese notes have been greatly amended and updated for the MSC Bioinformatics and Molecular Biology at Pwani university, sponsored by EANBiT by [Caleb Kibet](https://twitter.com/calkibet)
+These notes have been greatly amended and updated for the MSC Bioinformatics and Molecular Biology at Pwani university, sponsored by EANBiT by [Caleb Kibet](https://twitter.com/calkibet)
 </small></small></i>
 
 # Quick Introduction to Jupyter Notebooks
