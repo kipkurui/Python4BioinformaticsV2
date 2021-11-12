@@ -1,6 +1,6 @@
 # Python For Bioinformatics
 
-Introduction to Python for Bioinformatics - available at https://github.com/kipkurui/Python4Bioinformatics2019.
+Introduction to Python for Bioinformatics - available at https://github.com/kipkurui/Python4BioinformaticsV2.
 
 <small><small><i>
 
