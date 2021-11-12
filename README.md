@@ -12,7 +12,7 @@ hese notes have been greatly amended and updated for the MSC Bioinformatics and 
 
 # Quick Introduction to Jupyter Notebooks
 
-Throughout this course, we will be using Jupyter Notebooks. Although the HPC you will be using will have Jupyter setup, these notes are provided for you want to set it up in your Computer. 
+Throughout this course, we will be using Jupyter Notebooks.These notes are provided for you want to set it up in your Computer. 
 
 ## Introduction
 The Jupyter Notebook is an interactive computing environment that enables users to author notebooks, which contain a complete and self-contained record of a computation. These notebooks can be shared more efficiently. The notebooks may contain:
