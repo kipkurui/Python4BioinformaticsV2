@@ -1,3 +1,5 @@
+# Assignment on conversion of scripts to functions
+
 ## Exercise_notebook_02
 #Calculate the % GC and % AT content in the trna sequence
 trna='AAGGGCTTAGCTTAATTAAAGTGGCTGATTTGCGTTCAGTTGATGCAGAGTGGGGTTTTGCAGTCCTTA'
@@ -92,13 +94,14 @@ def range_value(x,y):
 range_value(4,11)
 
 
-Notebook_6
+## Notebook_6
 
-Exercise Let's return to our earlier exercise: calculating %GC content. In this exercise:
+### Exercise Let's return to our earlier exercise: calculating %GC content. In this exercise:
 
-Write a function percentageGC that calculates the GC content of a DNA sequence
-The function should return the %GC content
-The Function should return a message if the provided sequence is not DNA (This should be checked by a different function, called by your function)
+### Write a function percentageGC that calculates the GC content of a DNA sequence
+### The function should return the %GC content
+### The Function should return a message if the provided sequence is not DNA (This should be checked by a different function, called by your function)
+
 ## DNA checker function
 seq='CAGTGATGATGACGAT'
 def dna_checker(seq):
@@ -141,4 +144,87 @@ def gene_names():
 gene_names()
 
 
+## Notebook_7
+###Show that the DNA string contains only four letters.
+
+import sys
+import re
+
+## Part 1
+
+#Takes a DNA string
+###Show that the DNA string contains only four letters.
+
+def dna_prove(input_file):
+    with open(input_file) as my_file:
+        my_file = my_file.read()
+        my_file2 = set(my_file.replace('\n',''))
+        return(set(my_file2))
+print(dna_prove(sys.argv[1]))
+
+
+## Modified to take a fasta file
+
+def dna_prove(input_file):
+    sequence = ''
+    with open(input_file) as my_file:
+        for line in my_file:
+            if line.startswith('>'):
+                continue
+            sequence += line
+                
+        sequence = (sequence.replace('\n',''))
+        return(set(sequence))
+print(dna_prove(sys.argv[1]))
+
+
+ ## Part 2   
+###In the DNA string there are regions that have a repeating letter. What is the letter and length of the longest repeating region?
+    
+def dna_prove(input_file):
+    sequence = ''
+    sequence_list = []
+    with open(input_file) as my_file:
+        for line in my_file:
+            if line.startswith('>'):
+                continue
+            sequence += line
+            sequence = (sequence.replace('\n',''))
+            
+        sequence_list.append(max(re.findall(r"A{2,}", sequence)))
+        sequence_list.append(max(re.findall(r"G{2,}", sequence)))
+        sequence_list.append(max(re.findall(r"T{2,}", sequence)))
+        sequence_list.append(max(re.findall(r"C{2,}", sequence)))
+        print(max(sequence_list))
+        print(len(max(sequence_list)))
+        
+dna_prove(sys.argv[1])
+
+## Part 3
+### How many ’ATG’s are in the DNA string?
+
+def dna_prove(input_file,string):
+    sequence = ''
+    sequence_list = []
+    with open(input_file) as my_file:
+        for line in my_file:
+            # Remove the header line of a fasta file
+            if line.startswith('>'):
+                continue
+            sequence += line
+            # Removes new line character '\n'
+            sequence = (sequence.replace('\n',''))
+            # Gets the longest repeating pattern
+        sequence_list.append(max(re.findall(r"A{2,}", sequence)))
+        sequence_list.append(max(re.findall(r"G{2,}", sequence)))
+        sequence_list.append(max(re.findall(r"T{2,}", sequence)))
+        sequence_list.append(max(re.findall(r"C{2,}", sequence)))
+        print(max(sequence_list))
+        print(len(max(sequence_list)))
+
+    print(sequence.count(string))
+    
+        #return(set(sequence))
+#print(dna_prove(sys.argv[1]))
+dna_prove(sys.argv[1],sys.argv[2])
 
