@@ -62,19 +62,19 @@ or by using pip
 
 ## How to learn from this resource?
 
-Download all the notebooks from [Python4Bioinformatics(https://github.com/kipkurui/Python4Bioinformatics2019). The easiest way to do that is to clone the GitHub repository to your working directory using any of the following commands:
+Download all the notebooks from [Python4Bioinformatics(https://github.com/kipkurui/Python4BioinformaticsV2). The easiest way to do that is to clone the GitHub repository to your working directory using any of the following commands:
 
-    git clone https://github.com/kipkurui/Python4Bioinformatics2019.git
+    git clone https://github.com/kipkurui/Python4BioinformaticsV2.git
 
 or
 
-    wget https://github.com/kipkurui/Python4Bioinformatics2019/archive/master.zip
+    wget https://github.com/kipkurui/Python4BioinformaticsV2/archive/master.zip
     
     unzip master.zip
     
     rm master.zip
     
-    cd Python4Bioinformatics-master
+    cd Python4BioinformaticsV2-master
     
 Then you can quickly launch jupyter lab using:
 
