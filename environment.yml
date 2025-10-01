@@ -1,0 +1,20 @@
+name: python4bioinformatics
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.13
+  - jupyter
+  - jupyterlab
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scipy
+  - biopython
+  - notebook
+  - ipywidgets
+  - pip
+  - pip:
+    - scikit-learn

@@ -2,12 +2,14 @@
 
 Introduction to Python for Bioinformatics - available at https://github.com/kipkurui/Python4BioinformaticsV2.
 
+**Python Version: 3.13** (Latest stable release)
+
 <small><small><i>
 
 ## Attribution
 These tutorials are an adaptation of the Introduction to Python for Maths by [Andreas Ernst](http://users.monash.edu.au/~andreas), available from https://gitlab.erc.monash.edu.au/andrease/Python4Maths.git. The original version was written by Rajath Kumar and is available at https://github.com/rajathkumarmp/Python-Lectures.
 
-hese notes have been greatly amended and updated for the MSC Bioinformatics and Molecular Biology at Pwani university, sponsored by EANBiT by [Caleb Kibet](https://twitter.com/calkibet)
+These notes have been greatly amended and updated for the MSC Bioinformatics and Molecular Biology at Pwani university, sponsored by EANBiT by [Caleb Kibet](https://twitter.com/calkibet)
 </small></small></i>
 
 # Quick Introduction to Jupyter Notebooks
@@ -32,56 +34,76 @@ The notebook can allow a computational researcher to create reproducible documen
 
 ### Installation
 
-1. [Download Miniconda](https://www.anaconda.com/download/) for your specific OS to your home directory
+#### Option 1: Using Conda Environment (Recommended)
+
+1. [Download Miniconda](https://www.anaconda.com/download/) or Anaconda for your specific OS
     - Linux: `wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh`
     - Mac: `curl https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh`
-2. Run:
-    - `bash Miniconda3-latest-Linux-x86_64.sh`
-    - `bash Miniconda3-latest-MacOSX-x86_64.sh`
-3. Follow all the prompts: if unsure, accept defaults
-4. Close and re-open your terminal
-5. If the installation is successful, you should see a list of installed packages with
-    - `conda list`
-If the command cannot be found, you can add Anaconda bin to the path using:
-    ` export PATH=~/miniconda3/bin:$PATH`
+    - Windows: [Download installer](https://docs.anaconda.com/anaconda/install/windows/)
 
-For reproducible analysis, you can [create a conda environment](https://conda.io/docs/user-guide/tasks/manage-environments.html) with all the Python packages you used.
+2. Install Miniconda:
+    - Linux/Mac: `bash Miniconda3-latest-*.sh`
+    - Windows: Run the downloaded .exe installer
+    - Follow all prompts (accept defaults if unsure)
 
-    `conda create --name bioinf python jupyter`
-    
-To activate the conda environment:
-    `source activate bioinf`
+3. Close and re-open your terminal
 
-Having set-up conda environment, you can install `jupyter lab` using pip. 
+4. Verify installation:
+    ```bash
+    conda --version
+    ```
 
-`conda install -c conda-forge jupyterlab`
+5. Create the conda environment using the provided `environment.yml` file:
+    ```bash
+    conda env create -f environment.yml
+    ```
 
-or by using pip
+6. Activate the environment:
+    ```bash
+    conda activate python4bioinformatics
+    ```
 
-`pip3 install jupyter`
+#### Option 2: Manual Environment Setup
+
+If you prefer to create the environment manually:
+
+```bash
+conda create --name python4bioinformatics python=3.13
+conda activate python4bioinformatics
+conda install -c conda-forge jupyterlab numpy pandas matplotlib seaborn scipy biopython
+```
 
 ## How to learn from this resource?
 
-Download all the notebooks from [Python4Bioinformatics(https://github.com/kipkurui/Python4BioinformaticsV2). The easiest way to do that is to clone the GitHub repository to your working directory using any of the following commands:
-
+1. Clone the repository:
+    ```bash
     git clone https://github.com/kipkurui/Python4BioinformaticsV2.git
+    cd Python4BioinformaticsV2
+    ```
 
-or
-
+    Or download as ZIP:
+    ```bash
     wget https://github.com/kipkurui/Python4BioinformaticsV2/archive/master.zip
-    
     unzip master.zip
-    
     rm master.zip
-    
     cd Python4BioinformaticsV2-master
-    
-Then you can quickly launch jupyter lab using:
+    ```
 
-`jupyter lab`
+2. Create and activate the conda environment:
+    ```bash
+    conda env create -f environment.yml
+    conda activate python4bioinformatics
+    ```
 
-NB: We will use a jupyter lab for training. 
-A Jupyter notebook is made up of many cells. Each cell can contain Python code. You can execute a cell by clicking on it and pressing `Shift-Enter` or `Ctrl-Enter` (run without moving to the next line). 
+3. Launch Jupyter Lab:
+    ```bash
+    jupyter lab
+    ```
+
+**Using Jupyter Notebooks:**
+- Each notebook contains cells with Python code or text
+- Execute a cell: Press `Shift-Enter` (run and move to next) or `Ctrl-Enter` (run without moving)
+- We recommend using Jupyter Lab for the best experience 
 
 ## For Windows
 Follow the instructions available [here](https://docs.anaconda.com/anaconda/install/windows/)
