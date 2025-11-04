@@ -106,7 +106,79 @@ conda install -c conda-forge jupyterlab numpy pandas matplotlib seaborn scipy bi
 - We recommend using Jupyter Lab for the best experience 
 
 ## For Windows
-Follow the instructions available [here](https://docs.anaconda.com/anaconda/install/windows/)
+
+### Installation
+
+#### Option 1: Anaconda (Recommended for Beginners)
+1. Download Anaconda from https://www.anaconda.com/download
+2. Run the installer and follow the installation wizard
+3. Anaconda includes Jupyter Notebook by default
+
+#### Option 2: Miniconda + Manual Install
+1. Download Miniconda from https://docs.conda.io/en/latest/miniconda.html
+2. Install and open "Anaconda Prompt" from Start menu
+3. Install Jupyter:
+   ```bash
+   conda install jupyter
+   ```
+
+#### Option 3: pip (If Python already installed)
+1. Open Command Prompt or PowerShell
+2. Install Jupyter:
+   ```bash
+   pip install jupyter
+   ```
+
+### Launching Jupyter
+
+#### From Anaconda Navigator (GUI)
+1. Open Anaconda Navigator from Start menu
+2. Click "Launch" under Jupyter Notebook
+
+#### From Command Line
+1. Open "Anaconda Prompt" (or Command Prompt/PowerShell if using pip)
+2. Navigate to your project directory:
+   ```bash
+   cd C:\path\to\your\project
+   ```
+3. Launch Jupyter:
+   ```bash
+   jupyter notebook
+   ```
+4. Browser window opens automatically at http://localhost:8888
+
+### Creating and Using Notebooks
+
+1. Click "New" → "Python 3" to create a new notebook
+2. Type code in cells and press `Shift + Enter` to run
+3. Use `Ctrl + Enter` to run cell without moving to next
+4. Press `Esc` for command mode, `Enter` for edit mode
+5. Save with `Ctrl + S` or File → Save
+
+### Useful Keyboard Shortcuts
+
+**Command Mode (press Esc):**
+- `A` - Insert cell above
+- `B` - Insert cell below
+- `DD` - Delete cell
+- `M` - Convert to markdown
+- `Y` - Convert to code
+
+**Edit Mode (press Enter):**
+- `Shift + Enter` - Run cell and move to next
+- `Ctrl + Enter` - Run cell in place
+- `Tab` - Code completion
+
+### For This Course
+
+Navigate to the project directory and launch Jupyter:
+```bash
+cd C:\path\to\Python4BioinformaticsV2
+jupyter notebook
+```
+
+Then open `Programming.ipynb` or `Programming4BiologistsExam.ipynb` to get started.
+
 ### Further help
 
 To learn more about Jupyter notebooks, check [the official introduction](http://nbviewer.jupyter.org/github/jupyter/notebook/blob/master/docs/source/examples/Notebook/Notebook%20Basics.ipynb) and [some useful Jupyter Tricks](https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/). 
