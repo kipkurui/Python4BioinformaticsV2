@@ -177,8 +177,6 @@ cd C:\path\to\Python4BioinformaticsV2
 jupyter notebook
 ```
 
-Then open `Programming.ipynb` or `Programming4BiologistsExam.ipynb` to get started.
-
 ### Further help
 
 To learn more about Jupyter notebooks, check [the official introduction](http://nbviewer.jupyter.org/github/jupyter/notebook/blob/master/docs/source/examples/Notebook/Notebook%20Basics.ipynb) and [some useful Jupyter Tricks](https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/). 
